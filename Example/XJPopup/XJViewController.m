@@ -7,6 +7,7 @@
 //
 
 #import "XJViewController.h"
+#import "XJPopupMessage.h"
 
 @interface XJViewController ()
 
@@ -18,8 +19,19 @@
 {
     [super viewDidLoad];
 
+    
 }
 
+- (void)touchesBegan:(NSSet<UITouch *> *)touches withEvent:(UIEvent *)event
+{
+    NSLog(@"TOUCHED!!");
+    [XJPopupMessage showMessageWithTitle:@"title"
+                                subtitle:@"subtitle"
+                              completion:^
+    {
+        NSLog(@"showMessageWithTitle");
+    }];
+}
 
 
 @end

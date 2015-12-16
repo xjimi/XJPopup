@@ -1,15 +1,14 @@
 {
   "name": "XJPopup",
   "version": "0.1.0",
-  "summary": "A short description of XJPopup.",
-  "description": "",
-  "homepage": "https://github.com/<GITHUB_USERNAME>/XJPopup",
+  "summary": "Custom XJPopup.",
+  "homepage": "https://github.com/xjimi/XJPopup",
   "license": "MIT",
   "authors": {
     "XJIMI": "fn5128@gmail.com"
   },
   "source": {
-    "git": "https://github.com/<GITHUB_USERNAME>/XJPopup.git",
+    "git": "https://github.com/xjimi/XJPopup.git",
     "tag": "0.1.0"
   },
   "platforms": {

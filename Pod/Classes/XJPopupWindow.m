@@ -75,7 +75,7 @@
         [weakSelf dismissPopup];
     }];
     
-    [popupVC showWithAnimations:nil];
+    [popupVC show];
 }
 
 - (void)dismissPopup

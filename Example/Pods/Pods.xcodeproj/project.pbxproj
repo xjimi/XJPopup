@@ -9,17 +9,17 @@
 /* Begin PBXBuildFile section */
 		07288C319822FD9D11F9B785E50F313F /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3E4E89230EF59BC255123B67864ACF77 /* Foundation.framework */; };
 		1757936D56CE197202EE3E426F685021 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3E4E89230EF59BC255123B67864ACF77 /* Foundation.framework */; };
+		315C54BD7DC346195B4DFFC24B9237CC /* XJPopup-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 1C5C23194A27263CFABAF886F664F363 /* XJPopup-dummy.m */; };
+		4F517B252CCB8CFF295CEAB2A581B958 /* XJPopupWindow.h in Headers */ = {isa = PBXBuildFile; fileRef = 204418DFBE232704DB95823F0A66268A /* XJPopupWindow.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		52FFA45ED884A4F500C7C75E16207A7D /* XJPopupBaseViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DA1520313006AB6605D44A417FC1493F /* XJPopupBaseViewController.m */; };
 		5DBD9F40C4BBB4B8FDD3B7A1AFFCB76E /* XJPopup.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 84EFC4A2CDFD1FE7FD6E69B911A393F8 /* XJPopup.bundle */; };
 		83D96D8FD9237DC28E09E5A313552809 /* Pods-XJPopup_Tests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 33448FEC6C38D2C789C730402183556F /* Pods-XJPopup_Tests-dummy.m */; };
-		90F449851C21AE8200FC8CF9 /* XJPopupWindow.h in Headers */ = {isa = PBXBuildFile; fileRef = 90F449831C21AE8200FC8CF9 /* XJPopupWindow.h */; };
-		90F449861C21AE8200FC8CF9 /* XJPopupWindow.m in Sources */ = {isa = PBXBuildFile; fileRef = 90F449841C21AE8200FC8CF9 /* XJPopupWindow.m */; };
-		90F449891C21AF2C00FC8CF9 /* XJPopupBaseViewController.h in Headers */ = {isa = PBXBuildFile; fileRef = 90F449871C21AF2C00FC8CF9 /* XJPopupBaseViewController.h */; };
-		90F4498A1C21AF2C00FC8CF9 /* XJPopupBaseViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 90F449881C21AF2C00FC8CF9 /* XJPopupBaseViewController.m */; };
-		94F1F69E42331802D92D300DBF30586B /* XJPopup-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 1C5C23194A27263CFABAF886F664F363 /* XJPopup-dummy.m */; };
-		A800552729BE9653A83B5668D3ECA85F /* XJPopup-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = D575AD3F2D2F5D1A32C6545ACBEDDE4C /* XJPopup-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		AF19E30E31C8A2015D40194061218CA3 /* XJPopupBaseViewController.h in Headers */ = {isa = PBXBuildFile; fileRef = A554985B6F8D54E9EFE460BB8EC21A74 /* XJPopupBaseViewController.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		BD0B86B55373F0F4C1D13C1AE68D780B /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3E4E89230EF59BC255123B67864ACF77 /* Foundation.framework */; };
 		D98FDB074104382B9072AFDD23665F94 /* Pods-XJPopup_Example-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = DA247406F2828D011F27D753466C3C70 /* Pods-XJPopup_Example-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		E721C987D4CED2D383C2139B857D9BCF /* Pods-XJPopup_Tests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 6A0A57DD32A1073EA272D696BA0C1A48 /* Pods-XJPopup_Tests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		E89ED4E10889BC6AE1D02CDFD9183AA9 /* XJPopup-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = D575AD3F2D2F5D1A32C6545ACBEDDE4C /* XJPopup-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		F93FC32539A31A8DA4DA49F4DD0984ED /* XJPopupWindow.m in Sources */ = {isa = PBXBuildFile; fileRef = FCFD5A821E5954CD4AF73A24DC8158EC /* XJPopupWindow.m */; };
 		FFEEEA58CB079509FC6704F3F2E3019C /* Pods-XJPopup_Example-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = B900841A12051DC666CE7B2E2988B315 /* Pods-XJPopup_Example-dummy.m */; };
 /* End PBXBuildFile section */
 
@@ -52,6 +52,7 @@
 		1049A9A163FBF79E1D01FB6E6BAB0D91 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		1AAC42ECCAB53D54D36D5FFC198D6C40 /* Pods-XJPopup_Tests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-XJPopup_Tests-acknowledgements.plist"; sourceTree = "<group>"; };
 		1C5C23194A27263CFABAF886F664F363 /* XJPopup-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "XJPopup-dummy.m"; sourceTree = "<group>"; };
+		204418DFBE232704DB95823F0A66268A /* XJPopupWindow.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = XJPopupWindow.h; sourceTree = "<group>"; };
 		28CF625D2926FFE709AB111C8B50CF5E /* Pods-XJPopup_Tests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-XJPopup_Tests-acknowledgements.markdown"; sourceTree = "<group>"; };
 		33448FEC6C38D2C789C730402183556F /* Pods-XJPopup_Tests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-XJPopup_Tests-dummy.m"; sourceTree = "<group>"; };
 		3E4E89230EF59BC255123B67864ACF77 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS9.0.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
@@ -65,13 +66,10 @@
 		78BA78E846BE26E12D780253CF028201 /* Pods-XJPopup_Example-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-XJPopup_Example-acknowledgements.markdown"; sourceTree = "<group>"; };
 		84EFC4A2CDFD1FE7FD6E69B911A393F8 /* XJPopup.bundle */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = XJPopup.bundle; sourceTree = BUILT_PRODUCTS_DIR; };
 		8F45529635BE9D4840B9CC534A4212E0 /* Pods-XJPopup_Example-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-XJPopup_Example-frameworks.sh"; sourceTree = "<group>"; };
-		90F449831C21AE8200FC8CF9 /* XJPopupWindow.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XJPopupWindow.h; sourceTree = "<group>"; };
-		90F449841C21AE8200FC8CF9 /* XJPopupWindow.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XJPopupWindow.m; sourceTree = "<group>"; };
-		90F449871C21AF2C00FC8CF9 /* XJPopupBaseViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XJPopupBaseViewController.h; sourceTree = "<group>"; };
-		90F449881C21AF2C00FC8CF9 /* XJPopupBaseViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XJPopupBaseViewController.m; sourceTree = "<group>"; };
 		9232D1CB000E405C7F88B20F0EAB820D /* Pods_XJPopup_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_XJPopup_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		9811B5A365DE9A605D8F1AF0A4A52975 /* Pods-XJPopup_Example-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-XJPopup_Example-acknowledgements.plist"; sourceTree = "<group>"; };
 		A2C67BD81E2CB1A8BC2E67109CA33061 /* Pods-XJPopup_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-XJPopup_Example.release.xcconfig"; sourceTree = "<group>"; };
+		A554985B6F8D54E9EFE460BB8EC21A74 /* XJPopupBaseViewController.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = XJPopupBaseViewController.h; sourceTree = "<group>"; };
 		B731F074F8C6B873527F4564BE80429E /* Pods-XJPopup_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-XJPopup_Tests.release.xcconfig"; sourceTree = "<group>"; };
 		B900841A12051DC666CE7B2E2988B315 /* Pods-XJPopup_Example-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-XJPopup_Example-dummy.m"; sourceTree = "<group>"; };
 		BA6428E9F66FD5A23C0A2E06ED26CD2F /* Podfile */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
@@ -79,11 +77,13 @@
 		C060E3D98DDDDB81F9E70A57431363E7 /* Pods-XJPopup_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-XJPopup_Tests.debug.xcconfig"; sourceTree = "<group>"; };
 		D575AD3F2D2F5D1A32C6545ACBEDDE4C /* XJPopup-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "XJPopup-umbrella.h"; sourceTree = "<group>"; };
 		D998689C8B9A77ECD7DDF919F5CD136C /* Pods-XJPopup_Tests-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-XJPopup_Tests-resources.sh"; sourceTree = "<group>"; };
+		DA1520313006AB6605D44A417FC1493F /* XJPopupBaseViewController.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = XJPopupBaseViewController.m; sourceTree = "<group>"; };
 		DA247406F2828D011F27D753466C3C70 /* Pods-XJPopup_Example-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-XJPopup_Example-umbrella.h"; sourceTree = "<group>"; };
 		E89624A004286BCDF91780E261BDB800 /* XJPopup.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = XJPopup.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		F7CB64F8BCC393DE90D22B6453DC59CE /* Pods_XJPopup_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_XJPopup_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		F82229509DCC8F4CE5A27C5F5AF20078 /* Pods-XJPopup_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-XJPopup_Example.debug.xcconfig"; sourceTree = "<group>"; };
 		FC8EB997DC2F904CF9A27B636DC72366 /* XJPopup-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "XJPopup-prefix.pch"; sourceTree = "<group>"; };
+		FCFD5A821E5954CD4AF73A24DC8158EC /* XJPopupWindow.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = XJPopupWindow.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -153,14 +153,6 @@
 			path = "Example/Pods/Target Support Files/XJPopup";
 			sourceTree = "<group>";
 		};
-		4F3E6962D3A5C25B30729E2EF5FD34D2 /* Pod */ = {
-			isa = PBXGroup;
-			children = (
-				B33FC5C2C0D5F5FDE42C766F62682A90 /* Classes */,
-			);
-			path = Pod;
-			sourceTree = "<group>";
-		};
 		51077951AD3083A7DC0224ACA06BAC68 /* Targets Support Files */ = {
 			isa = PBXGroup;
 			children = (
@@ -210,17 +202,6 @@
 			path = "Target Support Files/Pods-XJPopup_Example";
 			sourceTree = "<group>";
 		};
-		B33FC5C2C0D5F5FDE42C766F62682A90 /* Classes */ = {
-			isa = PBXGroup;
-			children = (
-				90F449831C21AE8200FC8CF9 /* XJPopupWindow.h */,
-				90F449841C21AE8200FC8CF9 /* XJPopupWindow.m */,
-				90F449871C21AF2C00FC8CF9 /* XJPopupBaseViewController.h */,
-				90F449881C21AF2C00FC8CF9 /* XJPopupBaseViewController.m */,
-			);
-			path = Classes;
-			sourceTree = "<group>";
-		};
 		BC3CA7F9E30CC8F7E2DD044DD34432FC /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
@@ -248,16 +229,45 @@
 		DC65A6A09A0D0D4745AF24A9407A4986 /* XJPopup */ = {
 			isa = PBXGroup;
 			children = (
-				4F3E6962D3A5C25B30729E2EF5FD34D2 /* Pod */,
+				EB046F5D23027900A0A4D61792D8CBEA /* Pod */,
 				1AEE71642B822AD1C0CA1DBBDF648080 /* Support Files */,
 			);
 			name = XJPopup;
 			path = ../..;
 			sourceTree = "<group>";
 		};
+		EB046F5D23027900A0A4D61792D8CBEA /* Pod */ = {
+			isa = PBXGroup;
+			children = (
+				EDDCA61B87C598528EA7EFB459CDEB54 /* Classes */,
+			);
+			path = Pod;
+			sourceTree = "<group>";
+		};
+		EDDCA61B87C598528EA7EFB459CDEB54 /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				A554985B6F8D54E9EFE460BB8EC21A74 /* XJPopupBaseViewController.h */,
+				DA1520313006AB6605D44A417FC1493F /* XJPopupBaseViewController.m */,
+				204418DFBE232704DB95823F0A66268A /* XJPopupWindow.h */,
+				FCFD5A821E5954CD4AF73A24DC8158EC /* XJPopupWindow.m */,
+			);
+			path = Classes;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXHeadersBuildPhase section */
+		0B294DF3D71FD2F470BA0057433BB98F /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E89ED4E10889BC6AE1D02CDFD9183AA9 /* XJPopup-umbrella.h in Headers */,
+				AF19E30E31C8A2015D40194061218CA3 /* XJPopupBaseViewController.h in Headers */,
+				4F517B252CCB8CFF295CEAB2A581B958 /* XJPopupWindow.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		2132605E0016F5918719C52667EAE4DF /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
@@ -270,17 +280,7 @@
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				90F449891C21AF2C00FC8CF9 /* XJPopupBaseViewController.h in Headers */,
 				D98FDB074104382B9072AFDD23665F94 /* Pods-XJPopup_Example-umbrella.h in Headers */,
-				90F449851C21AE8200FC8CF9 /* XJPopupWindow.h in Headers */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		B77F08E16595F0A3CA2DB569B3558B7A /* Headers */ = {
-			isa = PBXHeadersBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				A800552729BE9653A83B5668D3ECA85F /* XJPopup-umbrella.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -308,10 +308,10 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = A19825CF78BC014F326B6569F19489A4 /* Build configuration list for PBXNativeTarget "XJPopup" */;
 			buildPhases = (
-				52B2F9B671A99AA0FA5EBA6A5D702137 /* Sources */,
+				AB79645C7CC02736082092795F44AAA0 /* Sources */,
 				3622604D868CE10B011629959DB5A9FF /* Frameworks */,
 				BC87003E963CF208ACE25C43BD9D4924 /* Resources */,
-				B77F08E16595F0A3CA2DB569B3558B7A /* Headers */,
+				0B294DF3D71FD2F470BA0057433BB98F /* Headers */,
 			);
 			buildRules = (
 			);
@@ -414,11 +414,13 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		52B2F9B671A99AA0FA5EBA6A5D702137 /* Sources */ = {
+		AB79645C7CC02736082092795F44AAA0 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				94F1F69E42331802D92D300DBF30586B /* XJPopup-dummy.m in Sources */,
+				315C54BD7DC346195B4DFFC24B9237CC /* XJPopup-dummy.m in Sources */,
+				52FFA45ED884A4F500C7C75E16207A7D /* XJPopupBaseViewController.m in Sources */,
+				F93FC32539A31A8DA4DA49F4DD0984ED /* XJPopupWindow.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -426,8 +428,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				90F4498A1C21AF2C00FC8CF9 /* XJPopupBaseViewController.m in Sources */,
-				90F449861C21AE8200FC8CF9 /* XJPopupWindow.m in Sources */,
 				FFEEEA58CB079509FC6704F3F2E3019C /* Pods-XJPopup_Example-dummy.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

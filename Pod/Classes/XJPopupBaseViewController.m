@@ -22,7 +22,15 @@
 
 + (void)showPopupCompletion:(XJPopupDismissedBlock)completion
 {
-    
+    XJPopupBaseViewController *popupBaseVC = [XJPopupBaseViewController new];
+    [popupBaseVC addBackgroundView];
+    [popupBaseVC showPopupCompletion:completion];
+}
+
+- (void)showPopupCompletion:(XJPopupDismissedBlock)completion
+{
+    self.popupDismissedBlock = completion;
+    [[XJPopupWindow sharedInstance] addPopupViewController:self];
 }
 
 - (void)viewDidLoad
@@ -46,7 +54,7 @@
     self.popupWindowDismissedBlock = block;
 }
 
-- (void)showWithAnimations:(void (^)(void))animations
+- (void)show
 {
     self.bgView.alpha = 0.0f;
     [UIView animateWithDuration:.4
@@ -55,7 +63,7 @@
                      animations:^{
                          
                          self.bgView.alpha = 0.7f;
-                         if (animations) animations();
+                         [self showAnimations];
                          
                      } completion:^(BOOL finished) {
                          
@@ -64,8 +72,7 @@
                      }];
 }
 
-
-- (void)hideWithAnimations:(void (^)(void))animations completion:(void(^)(void))completion
+- (void)hideWithCompletion:(void(^)(void))completion
 {
     [UIView animateWithDuration:.4
                           delay:0
@@ -73,7 +80,7 @@
                      animations:^{
                          
                          self.bgView.alpha = 0.0f;
-                         if (animations) animations();
+                         [self hideAnimations];
                          
                      } completion:^(BOOL finished) {
                          
@@ -82,12 +89,16 @@
                      }];
 }
 
+- (void)showAnimations {
+}
+
+- (void)hideAnimations {
+}
+
 - (void)action_dismiss
 {
     __weak typeof(self)weakSelf = self;
-    [self hideWithAnimations:^{
-        
-    } completion:^{
+    [self hideWithCompletion:^{
         
         if (weakSelf.popupDismissedBlock) {
             weakSelf.popupDismissedBlock();
