@@ -1,0 +1,14 @@
+PODS:
+  - XJPopup (0.1.0)
+
+DEPENDENCIES:
+  - XJPopup (from `../`)
+
+EXTERNAL SOURCES:
+  XJPopup:
+    :path: ../
+
+SPEC CHECKSUMS:
+  XJPopup: ad8ffdf7ec2239d0b2e48f842c9aea9c28d690af
+
+COCOAPODS: 0.39.0

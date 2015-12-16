@@ -1,0 +1,6 @@
+framework module XJPopup {
+  umbrella header "XJPopup-umbrella.h"
+
+  export *
+  module * { export * }
+}
