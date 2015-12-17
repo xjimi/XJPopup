@@ -19,16 +19,26 @@ typedef void(^XJPopupWindowDismissedBlock)(void);
 //讓 XJPopupWindow 判斷用 (只用於 XJPopupWindow)
 @property (nonatomic, getter=isShowing) BOOL showing;
 
-+ (void)showPopupCompletion:(XJPopupDismissedBlock)completion;
-- (void)showPopupCompletion:(XJPopupDismissedBlock)completion;
+@property (nonatomic, getter=isDismissWhenTouchBackground) BOOL dismissWhenTouchBackground;
+
+//Sample
++ (void)showPopupWithCompletion:(XJPopupDismissedBlock)completion;
+- (void)showPopupWithCompletion:(XJPopupDismissedBlock)completion;
 
 - (void)addBackgroundView;
+- (void)addBlurBackgroundView;
 
 - (void)show;
+- (void)showAnimateWithDuration:(NSTimeInterval)duration
+                        options:(UIViewAnimationOptions)options
+                     animations:(void (^)(void))animations
+                     completion:(void (^)(void))completion;
 
-- (void)showAnimations;
-- (void)hideAnimations;
-
+- (void)hide;
+- (void)hideAnimateWithDuration:(NSTimeInterval)duration
+                        options:(UIViewAnimationOptions)options
+                     animations:(void (^)(void))animations
+                     completion:(void (^)(void))completion;
 //只用於 XJPopupWindow
 - (void)addPopupWindowDismissBlock:(XJPopupWindowDismissedBlock)block;
 

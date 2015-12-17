@@ -19,18 +19,28 @@
 {
     [super viewDidLoad];
 
-    
+    UIImage *image = [UIImage imageNamed:@"iPhone-6-Plus-Wallpaper-Paris-1.jpg"];
+    UIImageView *imageView = [[UIImageView alloc] initWithImage:image];
+    imageView.frame = self.view.bounds;
+    [self.view addSubview:imageView];
 }
 
 - (void)touchesBegan:(NSSet<UITouch *> *)touches withEvent:(UIEvent *)event
 {
-    NSLog(@"TOUCHED!!");
-    [XJPopupMessage showMessageWithTitle:@"title"
-                                subtitle:@"subtitle"
+    [XJPopupMessage showMessageWithTitle:@"錯誤"
+                                subtitle:@"帳號或密碼錯誤帳號或密碼錯誤帳號或密碼錯誤帳號或密碼錯誤帳號或密碼錯誤帳號或密碼錯誤帳號或密碼錯誤帳號或密碼錯誤帳號或密碼錯"
                               completion:^
-    {
-        NSLog(@"showMessageWithTitle");
-    }];
+     {
+
+     }];
+    
+    [XJPopupMessage showMessageWithTitle:@"title 2"
+                                subtitle:@"subtitle 2"
+                              completion:^
+     {
+
+     }];
+
 }
 
 

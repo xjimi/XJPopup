@@ -9,6 +9,12 @@
 #import <UIKit/UIKit.h>
 #import "XJPopupBaseViewController.h"
 
+typedef enum : NSUInteger {
+    XJPopupMessageTypeSuccess,
+    XJPopupMessageTypeError,
+    XJPopupMessageTypeInfo,
+} XJPopupMessageType;
+
 @interface XJPopupMessage : XJPopupBaseViewController
 
 + (void)showMessageWithTitle:(NSString *)title
