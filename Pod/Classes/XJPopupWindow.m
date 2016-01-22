@@ -67,8 +67,8 @@
     }
     
     [XJPopupWindow sharedInstance].presentWindow.frame = CGRectMake(0, 0, PortraitW, PortraitH);
-    [[XJPopupWindow sharedInstance].presentWindow makeKeyAndVisible];
     [XJPopupWindow sharedInstance].presentWindow.rootViewController = popupVC;
+    [[XJPopupWindow sharedInstance].presentWindow makeKeyAndVisible];
     
     __weak typeof(self)weakSelf = self;
     [popupVC addPopupWindowDismissBlock:^{

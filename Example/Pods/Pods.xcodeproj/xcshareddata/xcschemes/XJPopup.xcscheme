@@ -14,7 +14,7 @@
             buildForArchiving = "YES">
             <BuildableReference
                BuildableIdentifier = 'primary'
-               BlueprintIdentifier = '0BC1F275C947600668F26128'
+               BlueprintIdentifier = 'AF4F1AFBEE64CCA8D19E6B6A'
                BlueprintName = 'XJPopup'
                ReferencedContainer = 'container:Pods.xcodeproj'
                BuildableName = 'XJPopup.framework'>

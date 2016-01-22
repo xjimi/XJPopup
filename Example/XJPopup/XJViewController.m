@@ -8,6 +8,8 @@
 
 #import "XJViewController.h"
 #import "XJPopupMessage.h"
+#import "XJPopupBaseView.h"
+#import "XJPopupMessageView.h"
 
 @interface XJViewController ()
 
@@ -23,10 +25,23 @@
     UIImageView *imageView = [[UIImageView alloc] initWithImage:image];
     imageView.frame = self.view.bounds;
     [self.view addSubview:imageView];
+
 }
 
 - (void)touchesBegan:(NSSet<UITouch *> *)touches withEvent:(UIEvent *)event
 {
+    [XJPopupMessageView showMessageWithTitle:@"title"
+                                    subtitle:@"subtitle"
+                                  fullScreen:YES
+                             backgroundStyle:XJPopupBackgroundStyleBlack
+                  dismissWhenTouchBackground:YES
+                                  showInView:self.view
+                                  completion:^{
+        
+    }];
+     
+
+    /*
     [XJPopupMessage showMessageWithTitle:@"錯誤"
                                 subtitle:@"帳號或密碼錯誤帳號或密碼錯誤帳號或密碼錯誤帳號或密碼錯誤帳號或密碼錯誤帳號或密碼錯誤帳號或密碼錯誤帳號或密碼錯誤帳號或密碼錯"
                               completion:^
@@ -40,7 +55,7 @@
      {
 
      }];
-
+     */
 }
 
 

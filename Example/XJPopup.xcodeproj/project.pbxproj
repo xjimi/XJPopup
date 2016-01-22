@@ -21,6 +21,9 @@
 		6003F5BA195388D20070C39A /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 6003F5B8195388D20070C39A /* InfoPlist.strings */; };
 		6003F5BC195388D20070C39A /* Tests.m in Sources */ = {isa = PBXBuildFile; fileRef = 6003F5BB195388D20070C39A /* Tests.m */; };
 		873B8AEB1B1F5CCA007FD442 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 873B8AEA1B1F5CCA007FD442 /* Main.storyboard */; };
+		905698901C52061000E687AB /* XJPopupMessageView.m in Sources */ = {isa = PBXBuildFile; fileRef = 9056988F1C52061000E687AB /* XJPopupMessageView.m */; };
+		905698971C520A4F00E687AB /* UIView+XJPopupBaseView.m in Sources */ = {isa = PBXBuildFile; fileRef = 905698961C520A4F00E687AB /* UIView+XJPopupBaseView.m */; };
+		9056989C1C52149200E687AB /* XJPopupBaseView.m in Sources */ = {isa = PBXBuildFile; fileRef = 9056989B1C52149200E687AB /* XJPopupBaseView.m */; };
 		90EA0BE41C229E1500413CAE /* Launch Screen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 90EA0BE31C229E1500413CAE /* Launch Screen.storyboard */; };
 		90F4498D1C21C0B200FC8CF9 /* XJPopupMessage.m in Sources */ = {isa = PBXBuildFile; fileRef = 90F4498C1C21C0B200FC8CF9 /* XJPopupMessage.m */; };
 		B2E99575CB88B231E3C6E622 /* Pods_XJPopup_Tests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 59407C1AFD4C1B8D98676C0D /* Pods_XJPopup_Tests.framework */; };
@@ -64,6 +67,12 @@
 		6F80851B28EE54DFFD9E4D2E /* Pods-XJPopup_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-XJPopup_Tests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-XJPopup_Tests/Pods-XJPopup_Tests.debug.xcconfig"; sourceTree = "<group>"; };
 		873B8AEA1B1F5CCA007FD442 /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
 		8D0EB7FB0130D10CAFCF0218 /* Pods_XJPopup_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_XJPopup_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		9056988E1C52061000E687AB /* XJPopupMessageView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XJPopupMessageView.h; sourceTree = "<group>"; };
+		9056988F1C52061000E687AB /* XJPopupMessageView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XJPopupMessageView.m; sourceTree = "<group>"; };
+		905698951C520A4F00E687AB /* UIView+XJPopupBaseView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+XJPopupBaseView.h"; sourceTree = "<group>"; };
+		905698961C520A4F00E687AB /* UIView+XJPopupBaseView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+XJPopupBaseView.m"; sourceTree = "<group>"; };
+		9056989A1C52149200E687AB /* XJPopupBaseView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XJPopupBaseView.h; sourceTree = "<group>"; };
+		9056989B1C52149200E687AB /* XJPopupBaseView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XJPopupBaseView.m; sourceTree = "<group>"; };
 		9074EEADFE6FC36D865631A1 /* XJPopup.podspec */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = XJPopup.podspec; path = ../XJPopup.podspec; sourceTree = "<group>"; };
 		90EA0BE31C229E1500413CAE /* Launch Screen.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = "Launch Screen.storyboard"; sourceTree = "<group>"; };
 		90F4498B1C21C0B200FC8CF9 /* XJPopupMessage.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XJPopupMessage.h; sourceTree = "<group>"; };
@@ -144,6 +153,12 @@
 				6003F594195388D20070C39A /* Supporting Files */,
 				90F4498B1C21C0B200FC8CF9 /* XJPopupMessage.h */,
 				90F4498C1C21C0B200FC8CF9 /* XJPopupMessage.m */,
+				9056988E1C52061000E687AB /* XJPopupMessageView.h */,
+				9056988F1C52061000E687AB /* XJPopupMessageView.m */,
+				9056989A1C52149200E687AB /* XJPopupBaseView.h */,
+				9056989B1C52149200E687AB /* XJPopupBaseView.m */,
+				905698951C520A4F00E687AB /* UIView+XJPopupBaseView.h */,
+				905698961C520A4F00E687AB /* UIView+XJPopupBaseView.m */,
 				90EA0BE31C229E1500413CAE /* Launch Screen.storyboard */,
 			);
 			name = "Example for XJPopup";
@@ -399,10 +414,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9056989C1C52149200E687AB /* XJPopupBaseView.m in Sources */,
 				6003F59E195388D20070C39A /* XJAppDelegate.m in Sources */,
 				6003F5A7195388D20070C39A /* XJViewController.m in Sources */,
+				905698901C52061000E687AB /* XJPopupMessageView.m in Sources */,
 				90F4498D1C21C0B200FC8CF9 /* XJPopupMessage.m in Sources */,
 				6003F59A195388D20070C39A /* main.m in Sources */,
+				905698971C520A4F00E687AB /* UIView+XJPopupBaseView.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
