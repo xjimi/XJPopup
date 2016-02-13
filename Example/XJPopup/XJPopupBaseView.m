@@ -22,6 +22,10 @@
 
 @implementation XJPopupBaseView
 
+-(void)dealloc {
+    NSLog(@"%s", __func__);
+}
+
 - (void)showPopupWithCompletion:(XJPopupDismissedBlock)completion
 {
     self.userInteractionEnabled = NO;    
@@ -79,11 +83,11 @@
 - (void)showPopup
 {
     if (!self.view.popupQueue.count) return;
-
     for (XJPopupBaseView *v in self.view.popupQueue) {
         if (v.isShowing) return;
     }
-    
+
+    NSLog(@"show popopp");
 
     XJPopupBaseView *popupView = self.view.popupQueue.firstObject;
     popupView.showing = YES;
@@ -156,6 +160,9 @@
             weakSelf.popupBaseViewDismissedBlock();
         }
         
+        [weakSelf.bgView removeFromSuperview];
+        [weakSelf removeFromSuperview];
+        
     }];
 }
 
@@ -169,7 +176,6 @@
 
 - (void)removeAllObjects
 {
-    NSLog(@"%@", self.view.popupQueue);
     [self.view.popupQueue removeAllObjects];
 }
 

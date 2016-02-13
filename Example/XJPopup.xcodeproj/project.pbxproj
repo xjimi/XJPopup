@@ -24,6 +24,8 @@
 		905698901C52061000E687AB /* XJPopupMessageView.m in Sources */ = {isa = PBXBuildFile; fileRef = 9056988F1C52061000E687AB /* XJPopupMessageView.m */; };
 		90EA0BE41C229E1500413CAE /* Launch Screen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 90EA0BE31C229E1500413CAE /* Launch Screen.storyboard */; };
 		90F4498D1C21C0B200FC8CF9 /* XJPopupMessage.m in Sources */ = {isa = PBXBuildFile; fileRef = 90F4498C1C21C0B200FC8CF9 /* XJPopupMessage.m */; };
+		90F8980E1C6F656B00998F10 /* UIView+XJPopupBaseView.m in Sources */ = {isa = PBXBuildFile; fileRef = 90F8980B1C6F656B00998F10 /* UIView+XJPopupBaseView.m */; };
+		90F8980F1C6F656B00998F10 /* XJPopupBaseView.m in Sources */ = {isa = PBXBuildFile; fileRef = 90F8980D1C6F656B00998F10 /* XJPopupBaseView.m */; };
 		B2E99575CB88B231E3C6E622 /* Pods_XJPopup_Tests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 59407C1AFD4C1B8D98676C0D /* Pods_XJPopup_Tests.framework */; };
 		DA0CCA139FDD850CE6D96636 /* Pods_XJPopup_Example.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8D0EB7FB0130D10CAFCF0218 /* Pods_XJPopup_Example.framework */; };
 /* End PBXBuildFile section */
@@ -71,6 +73,10 @@
 		90EA0BE31C229E1500413CAE /* Launch Screen.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = "Launch Screen.storyboard"; sourceTree = "<group>"; };
 		90F4498B1C21C0B200FC8CF9 /* XJPopupMessage.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XJPopupMessage.h; sourceTree = "<group>"; };
 		90F4498C1C21C0B200FC8CF9 /* XJPopupMessage.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XJPopupMessage.m; sourceTree = "<group>"; };
+		90F8980A1C6F656B00998F10 /* UIView+XJPopupBaseView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+XJPopupBaseView.h"; sourceTree = "<group>"; };
+		90F8980B1C6F656B00998F10 /* UIView+XJPopupBaseView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+XJPopupBaseView.m"; sourceTree = "<group>"; };
+		90F8980C1C6F656B00998F10 /* XJPopupBaseView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XJPopupBaseView.h; sourceTree = "<group>"; };
+		90F8980D1C6F656B00998F10 /* XJPopupBaseView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XJPopupBaseView.m; sourceTree = "<group>"; };
 		AC09FA7A93DF8106455A3E3F /* Pods-XJPopup_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-XJPopup_Example.release.xcconfig"; path = "Pods/Target Support Files/Pods-XJPopup_Example/Pods-XJPopup_Example.release.xcconfig"; sourceTree = "<group>"; };
 		AC117D1DEB2EC4BA7F6F6A2B /* Pods-XJPopup_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-XJPopup_Tests.release.xcconfig"; path = "Pods/Target Support Files/Pods-XJPopup_Tests/Pods-XJPopup_Tests.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -149,6 +155,10 @@
 				90F4498C1C21C0B200FC8CF9 /* XJPopupMessage.m */,
 				9056988E1C52061000E687AB /* XJPopupMessageView.h */,
 				9056988F1C52061000E687AB /* XJPopupMessageView.m */,
+				90F8980A1C6F656B00998F10 /* UIView+XJPopupBaseView.h */,
+				90F8980B1C6F656B00998F10 /* UIView+XJPopupBaseView.m */,
+				90F8980C1C6F656B00998F10 /* XJPopupBaseView.h */,
+				90F8980D1C6F656B00998F10 /* XJPopupBaseView.m */,
 				90EA0BE31C229E1500413CAE /* Launch Screen.storyboard */,
 			);
 			name = "Example for XJPopup";
@@ -404,11 +414,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				90F8980F1C6F656B00998F10 /* XJPopupBaseView.m in Sources */,
 				6003F59E195388D20070C39A /* XJAppDelegate.m in Sources */,
 				6003F5A7195388D20070C39A /* XJViewController.m in Sources */,
 				905698901C52061000E687AB /* XJPopupMessageView.m in Sources */,
 				90F4498D1C21C0B200FC8CF9 /* XJPopupMessage.m in Sources */,
 				6003F59A195388D20070C39A /* main.m in Sources */,
+				90F8980E1C6F656B00998F10 /* UIView+XJPopupBaseView.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

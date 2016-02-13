@@ -14,14 +14,6 @@
 		52FFA45ED884A4F500C7C75E16207A7D /* XJPopupBaseViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DA1520313006AB6605D44A417FC1493F /* XJPopupBaseViewController.m */; };
 		5DBD9F40C4BBB4B8FDD3B7A1AFFCB76E /* XJPopup.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 84EFC4A2CDFD1FE7FD6E69B911A393F8 /* XJPopup.bundle */; };
 		83D96D8FD9237DC28E09E5A313552809 /* Pods-XJPopup_Tests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 33448FEC6C38D2C789C730402183556F /* Pods-XJPopup_Tests-dummy.m */; };
-		90F897EE1C6F4E3F00998F10 /* UIView+XJPopupBaseView.h in Headers */ = {isa = PBXBuildFile; fileRef = 90F897EA1C6F4E3F00998F10 /* UIView+XJPopupBaseView.h */; };
-		90F897EF1C6F4E3F00998F10 /* UIView+XJPopupBaseView.h in Headers */ = {isa = PBXBuildFile; fileRef = 90F897EA1C6F4E3F00998F10 /* UIView+XJPopupBaseView.h */; };
-		90F897F01C6F4E3F00998F10 /* UIView+XJPopupBaseView.m in Sources */ = {isa = PBXBuildFile; fileRef = 90F897EB1C6F4E3F00998F10 /* UIView+XJPopupBaseView.m */; };
-		90F897F11C6F4E3F00998F10 /* UIView+XJPopupBaseView.m in Sources */ = {isa = PBXBuildFile; fileRef = 90F897EB1C6F4E3F00998F10 /* UIView+XJPopupBaseView.m */; };
-		90F897F21C6F4E3F00998F10 /* XJPopupBaseView.h in Headers */ = {isa = PBXBuildFile; fileRef = 90F897EC1C6F4E3F00998F10 /* XJPopupBaseView.h */; };
-		90F897F31C6F4E3F00998F10 /* XJPopupBaseView.h in Headers */ = {isa = PBXBuildFile; fileRef = 90F897EC1C6F4E3F00998F10 /* XJPopupBaseView.h */; };
-		90F897F41C6F4E3F00998F10 /* XJPopupBaseView.m in Sources */ = {isa = PBXBuildFile; fileRef = 90F897ED1C6F4E3F00998F10 /* XJPopupBaseView.m */; };
-		90F897F51C6F4E3F00998F10 /* XJPopupBaseView.m in Sources */ = {isa = PBXBuildFile; fileRef = 90F897ED1C6F4E3F00998F10 /* XJPopupBaseView.m */; };
 		AF19E30E31C8A2015D40194061218CA3 /* XJPopupBaseViewController.h in Headers */ = {isa = PBXBuildFile; fileRef = A554985B6F8D54E9EFE460BB8EC21A74 /* XJPopupBaseViewController.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		BD0B86B55373F0F4C1D13C1AE68D780B /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3E4E89230EF59BC255123B67864ACF77 /* Foundation.framework */; };
 		D98FDB074104382B9072AFDD23665F94 /* Pods-XJPopup_Example-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = DA247406F2828D011F27D753466C3C70 /* Pods-XJPopup_Example-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
@@ -74,10 +66,6 @@
 		78BA78E846BE26E12D780253CF028201 /* Pods-XJPopup_Example-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-XJPopup_Example-acknowledgements.markdown"; sourceTree = "<group>"; };
 		84EFC4A2CDFD1FE7FD6E69B911A393F8 /* XJPopup.bundle */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = XJPopup.bundle; sourceTree = BUILT_PRODUCTS_DIR; };
 		8F45529635BE9D4840B9CC534A4212E0 /* Pods-XJPopup_Example-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-XJPopup_Example-frameworks.sh"; sourceTree = "<group>"; };
-		90F897EA1C6F4E3F00998F10 /* UIView+XJPopupBaseView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+XJPopupBaseView.h"; sourceTree = "<group>"; };
-		90F897EB1C6F4E3F00998F10 /* UIView+XJPopupBaseView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+XJPopupBaseView.m"; sourceTree = "<group>"; };
-		90F897EC1C6F4E3F00998F10 /* XJPopupBaseView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XJPopupBaseView.h; sourceTree = "<group>"; };
-		90F897ED1C6F4E3F00998F10 /* XJPopupBaseView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XJPopupBaseView.m; sourceTree = "<group>"; };
 		9232D1CB000E405C7F88B20F0EAB820D /* Pods_XJPopup_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_XJPopup_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		9811B5A365DE9A605D8F1AF0A4A52975 /* Pods-XJPopup_Example-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-XJPopup_Example-acknowledgements.plist"; sourceTree = "<group>"; };
 		A2C67BD81E2CB1A8BC2E67109CA33061 /* Pods-XJPopup_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-XJPopup_Example.release.xcconfig"; sourceTree = "<group>"; };
@@ -263,10 +251,6 @@
 				DA1520313006AB6605D44A417FC1493F /* XJPopupBaseViewController.m */,
 				204418DFBE232704DB95823F0A66268A /* XJPopupWindow.h */,
 				FCFD5A821E5954CD4AF73A24DC8158EC /* XJPopupWindow.m */,
-				90F897EA1C6F4E3F00998F10 /* UIView+XJPopupBaseView.h */,
-				90F897EB1C6F4E3F00998F10 /* UIView+XJPopupBaseView.m */,
-				90F897EC1C6F4E3F00998F10 /* XJPopupBaseView.h */,
-				90F897ED1C6F4E3F00998F10 /* XJPopupBaseView.m */,
 			);
 			path = Classes;
 			sourceTree = "<group>";
@@ -280,8 +264,6 @@
 			files = (
 				E89ED4E10889BC6AE1D02CDFD9183AA9 /* XJPopup-umbrella.h in Headers */,
 				AF19E30E31C8A2015D40194061218CA3 /* XJPopupBaseViewController.h in Headers */,
-				90F897EF1C6F4E3F00998F10 /* UIView+XJPopupBaseView.h in Headers */,
-				90F897F31C6F4E3F00998F10 /* XJPopupBaseView.h in Headers */,
 				4F517B252CCB8CFF295CEAB2A581B958 /* XJPopupWindow.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -298,8 +280,6 @@
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				90F897EE1C6F4E3F00998F10 /* UIView+XJPopupBaseView.h in Headers */,
-				90F897F21C6F4E3F00998F10 /* XJPopupBaseView.h in Headers */,
 				D98FDB074104382B9072AFDD23665F94 /* Pods-XJPopup_Example-umbrella.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -441,8 +421,6 @@
 				315C54BD7DC346195B4DFFC24B9237CC /* XJPopup-dummy.m in Sources */,
 				52FFA45ED884A4F500C7C75E16207A7D /* XJPopupBaseViewController.m in Sources */,
 				F93FC32539A31A8DA4DA49F4DD0984ED /* XJPopupWindow.m in Sources */,
-				90F897F51C6F4E3F00998F10 /* XJPopupBaseView.m in Sources */,
-				90F897F11C6F4E3F00998F10 /* UIView+XJPopupBaseView.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -451,8 +429,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				FFEEEA58CB079509FC6704F3F2E3019C /* Pods-XJPopup_Example-dummy.m in Sources */,
-				90F897F41C6F4E3F00998F10 /* XJPopupBaseView.m in Sources */,
-				90F897F01C6F4E3F00998F10 /* UIView+XJPopupBaseView.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

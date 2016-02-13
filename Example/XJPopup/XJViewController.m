@@ -25,10 +25,17 @@
     UIImageView *imageView = [[UIImageView alloc] initWithImage:image];
     imageView.frame = self.view.bounds;
     [self.view addSubview:imageView];
+    imageView.userInteractionEnabled = YES;
+    
+    UITapGestureRecognizer *tap = [[UITapGestureRecognizer alloc] initWithTarget:self action:@selector(singleTap:)];
+    tap.numberOfTapsRequired = 1;
+    [imageView addGestureRecognizer:tap];
 
 }
 
-- (void)touchesBegan:(NSSet<UITouch *> *)touches withEvent:(UIEvent *)event
+
+
+- (void)singleTap:(UIGestureRecognizer *)recognizer
 {
     [XJPopupMessageView showMessageWithTitle:@"title"
                                     subtitle:@"subtitle"
