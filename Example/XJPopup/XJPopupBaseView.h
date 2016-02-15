@@ -10,8 +10,9 @@
 #import "UIView+XJPopupBaseView.h"
 
 typedef enum : NSUInteger {
-    XJPopupBackgroundStyleBlack,
+    XJPopupBackgroundStyleNone,
     XJPopupBackgroundStyleBlur,
+    XJPopupBackgroundStyleBlack,
 } XJPopupBackgroundStyle;
 
 
@@ -23,11 +24,7 @@ typedef void(^XJPopupBaseViewDismissedBlock)(void);
 
 @property (nonatomic, assign) UIView *view;
 
-@property (nonatomic, getter=isFullScreen) BOOL fullScreen;
-
-@property (nonatomic, assign) BOOL needBackground;
-
-@property (nonatomic, assign) BOOL needBlurBackground;
+@property (nonatomic, assign) XJPopupBackgroundStyle backgroundStyle;
 
 @property (nonatomic, getter=isShowing) BOOL showing;
 
@@ -40,10 +37,6 @@ typedef void(^XJPopupBaseViewDismissedBlock)(void);
 - (void)dismissPopup;
 
 - (void)addPopupBaseViewDismissBlock:(XJPopupBaseViewDismissedBlock)block;
-
-- (void)addBackgroundView;
-- (void)addBlurBackgroundView;
-
 
 - (void)show;
 - (void)showAnimateWithDuration:(NSTimeInterval)duration

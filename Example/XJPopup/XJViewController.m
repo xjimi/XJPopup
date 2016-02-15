@@ -13,6 +13,8 @@
 
 @interface XJViewController ()
 
+@property (nonatomic, strong) UIImageView *imageView;
+
 @end
 
 @implementation XJViewController
@@ -23,7 +25,13 @@
 
     UIImage *image = [UIImage imageNamed:@"iPhone-6-Plus-Wallpaper-Paris-1.jpg"];
     UIImageView *imageView = [[UIImageView alloc] initWithImage:image];
-    imageView.frame = self.view.bounds;
+    imageView.contentMode = UIViewContentModeScaleAspectFill;
+    imageView.clipsToBounds = YES;
+    
+    CGRect imageFrame = self.view.bounds;
+    imageFrame.size.height = imageFrame.size.width * (9.0f / 16.0f);
+    imageView.frame = imageFrame;
+    
     [self.view addSubview:imageView];
     imageView.userInteractionEnabled = YES;
     
@@ -31,6 +39,7 @@
     tap.numberOfTapsRequired = 1;
     [imageView addGestureRecognizer:tap];
 
+    self.imageView = imageView;
 }
 
 
@@ -39,10 +48,9 @@
 {
     [XJPopupMessageView showMessageWithTitle:@"title"
                                     subtitle:@"subtitle"
-                                  fullScreen:YES
                              backgroundStyle:XJPopupBackgroundStyleBlack
                   dismissWhenTouchBackground:YES
-                                  showInView:self.view
+                                  showInView:self.imageView
                                   completion:^{
         
     }];

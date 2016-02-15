@@ -15,23 +15,22 @@
 @property (nonatomic, strong) NSString *messageTitle;
 @property (nonatomic, strong) NSString *messageSubtitle;
 
-
 @end
 
 @implementation XJPopupMessageView
 
 + (void)showMessageWithTitle:(NSString *)title
                     subtitle:(NSString *)subtitle
-                  fullScreen:(BOOL)fullScreen
              backgroundStyle:(XJPopupBackgroundStyle)backgroundStyle
   dismissWhenTouchBackground:(BOOL)dismissWhenTouchBackground
                   showInView:(UIView *)view
                   completion:(void(^)(void))completion
 {
     XJPopupMessageView *popupMessageView = [XJPopupMessageView new];
+    popupMessageView.view = view;
     popupMessageView.messageTitle = title;
     popupMessageView.messageSubtitle = subtitle;
-    popupMessageView.view = view;
+    popupMessageView.backgroundStyle = backgroundStyle;
     popupMessageView.dismissWhenTouchBackground = dismissWhenTouchBackground;
     [popupMessageView addSubview:popupMessageView.messageView];
     [popupMessageView showPopupWithCompletion:completion];
@@ -106,8 +105,8 @@
         
     } completion:^{
         
+        
     }];
 }
-
 
 @end

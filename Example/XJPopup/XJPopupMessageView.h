@@ -16,7 +16,6 @@
 
 + (void)showMessageWithTitle:(NSString *)title
                     subtitle:(NSString *)subtitle
-                  fullScreen:(BOOL)fullScreen
              backgroundStyle:(XJPopupBackgroundStyle)backgroundStyle
   dismissWhenTouchBackground:(BOOL)dismissWhenTouchBackground
                   showInView:(UIView *)view

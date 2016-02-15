@@ -22,13 +22,8 @@
 
 @implementation XJPopupBaseView
 
--(void)dealloc {
-    NSLog(@"%s", __func__);
-}
-
 - (void)showPopupWithCompletion:(XJPopupDismissedBlock)completion
 {
-    self.userInteractionEnabled = NO;    
     self.popupDismissedBlock = completion;
     [self.view.popupQueue addObject:self];
     [self showPopup];
@@ -38,7 +33,7 @@
 {
     if (!_bgView)
     {
-        UIView *bgView = [[UIView alloc] initWithFrame:CGRectMake(0, 0, PortraitW, PortraitH)];
+        UIView *bgView = [[UIView alloc] initWithFrame:self.bounds];
         bgView.backgroundColor = [[UIColor blackColor] colorWithAlphaComponent:.8];
         UITapGestureRecognizer *tapGestureRecognizer = [[UITapGestureRecognizer alloc] initWithTarget:self action:@selector(action_dismiss)];
         tapGestureRecognizer.numberOfTapsRequired = 1;
@@ -57,19 +52,20 @@
 {
     [self addBackgroundView];
     
+    CGRect captureFrame = self.bgView.frame;
     UIWindow *screenWindow = [UIApplication sharedApplication].windows.firstObject;
-    UIGraphicsBeginImageContext(screenWindow.frame.size);
+    UIGraphicsBeginImageContext(captureFrame.size);
     [screenWindow.layer renderInContext:UIGraphicsGetCurrentContext()];
     UIImage *screenImage = UIGraphicsGetImageFromCurrentImageContext();
     UIGraphicsEndImageContext();
     
     UIImageView *imageView = [[UIImageView alloc] initWithImage:screenImage];
-    imageView.frame = self.bgView.bounds;
+    imageView.frame = captureFrame;
     [self.bgView addSubview:imageView];
     
     UIBlurEffect *blurEffect = [UIBlurEffect effectWithStyle:UIBlurEffectStyleDark];
     UIVisualEffectView *blurEffectView = [[UIVisualEffectView alloc] initWithEffect:blurEffect];
-    blurEffectView.frame = self.bgView.bounds;
+    blurEffectView.frame = captureFrame;
     blurEffectView.autoresizingMask = UIViewAutoresizingFlexibleWidth | UIViewAutoresizingFlexibleHeight;
     blurEffectView.userInteractionEnabled = NO;
     [self.bgView addSubview:blurEffectView];
@@ -87,13 +83,18 @@
         if (v.isShowing) return;
     }
 
-    NSLog(@"show popopp");
-
     XJPopupBaseView *popupView = self.view.popupQueue.firstObject;
     popupView.showing = YES;
     popupView.frame = self.view.frame;
-    [popupView addBlurBackgroundView];
-
+    if (self.backgroundStyle == XJPopupBackgroundStyleBlur) {
+        [popupView addBlurBackgroundView];
+    } else if (self.backgroundStyle == XJPopupBackgroundStyleBlack) {
+        [popupView addBackgroundView];
+    } else if (self.backgroundStyle == XJPopupBackgroundStyleNone) {
+        [popupView addBackgroundView];
+        self.bgView.backgroundColor = [UIColor clearColor];
+    }
+    
     [self.view addSubview:popupView];
     
     __weak typeof(self)weakSelf = self;
@@ -116,6 +117,7 @@
                      animations:(void (^)(void))animations
                      completion:(void (^)(void))completion
 {
+    self.view.userInteractionEnabled = NO;
     self.bgView.alpha = 0.0f;
     [UIView animateWithDuration:duration delay:0 options:options animations:^{
         
@@ -124,8 +126,8 @@
         
     } completion:^(BOOL finished) {
         
-        self.userInteractionEnabled = YES;
         if (completion) completion();
+        self.view.userInteractionEnabled = YES;
         
     }];
 }
@@ -142,6 +144,7 @@
                      animations:(void (^)(void))animations
                      completion:(void (^)(void))completion
 {
+    self.view.userInteractionEnabled = NO;
     __weak typeof(self)weakSelf = self;
     [UIView animateWithDuration:duration delay:0 options:options animations:^{
         
@@ -152,23 +155,27 @@
         
         if (completion) completion();
         
-        if (weakSelf.popupDismissedBlock) {
-            weakSelf.popupDismissedBlock();
-        }
+        if (weakSelf.popupDismissedBlock) weakSelf.popupDismissedBlock();
         
-        if (weakSelf.popupBaseViewDismissedBlock) {
-            weakSelf.popupBaseViewDismissedBlock();
-        }
+        if (weakSelf.popupBaseViewDismissedBlock) weakSelf.popupBaseViewDismissedBlock();
         
-        [weakSelf.bgView removeFromSuperview];
-        [weakSelf removeFromSuperview];
-        
+        self.view.userInteractionEnabled = YES;
+
     }];
 }
 
 - (void)dismissPopup
 {
-    [self.view.popupQueue removeObjectAtIndex:0];
+    for (XJPopupBaseView *popupView in self.view.popupQueue)
+    {
+        if (popupView.isShowing)
+        {
+            [popupView removeFromSuperview];
+            [self.view.popupQueue removeObject:popupView];
+            break;
+        }
+    }
+    
     NSInteger count = self.view.popupQueue.count;
     if (count) [self showPopup];
     else [self removeAllObjects];
@@ -183,6 +190,5 @@
 {
     if (self.dismissWhenTouchBackground) [self hide];
 }
-
 
 @end
